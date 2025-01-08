@@ -8,8 +8,10 @@
 	--bg: #f5f5f5;
 	--primary1: #cdc9c9;
 	--primary2: rgba(255, 222, 214, 0.3);
+	--primary3: rgba(255, 222, 214, 0.5);
 	--hover: #ff6347;
-	--secondary1: #c2185b;
+	/* --secondary1: #c2185b; */
+	--secondary1: rgba(108, 117, 125, 1);
 	--secondary2: #ffded6;
 	--text1: #3e2723;
 	--text2: #212121;
@@ -20,7 +22,7 @@ body {
 }
 
 .header {
-	height: 30dvh;
+	height: 13.75rem;
 }
 
 /* nav bar style */
@@ -53,22 +55,22 @@ body {
 	padding: 1rem;
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: center !important;
 	justify-content: space-between;
 	position: sticky;
 	top: 0;
 	/* background-color: rgb(254, 255, 255); */
-	width: 33%;
+	width: 100%;
 	flex: 1 1;
-	/* border:1px solid red; */
-
 	/* border:1px solid red; */
 }
 
 .navbar-wrapper {
 	margin: 0 auto;
-	width: 80%;
+	width: 90%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 70%;
 }
 /* Social icons container */
@@ -96,17 +98,26 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	padding: 0.5rem 0.5rem;
+	padding: 0 0.5rem;
 	height: 100%;
+	width: 20%;
+	border: 2px solid var(--black);
 }
 
 .search-bar > input {
 	outline: none;
 	border: none;
-	padding: 0.5rem;
+	text-transform: uppercase;
+	padding: 0.2rem;
 	border-radius: 5px;
+	width: 80%;
+	background-color: var(--primary2);
 }
 .search-bar > input:focus {
+}
+
+.search-bar > ::-webkit-input-placeholder {
+	color: var(--black);
 }
 
 .social-icons a {
@@ -118,6 +129,7 @@ body {
 
 .social-icons a:hover {
 	color: #ff6347;
+	transition: all 0.3s ease-in-out;
 	/* Tomato color on hover */
 }
 
@@ -127,20 +139,17 @@ body {
 
 .nav-item {
 	margin-right: 1rem;
+	/* border: 1px solid red; */
 }
 
 .nav-link {
 	font-size: 1.2rem;
 	color: #333;
 	font-weight: 600;
-}
-
-.nav-link:hover {
-	color: #ff6347;
-}
-
-.search-bar {
-	background-color: var(--secondary2);
+	/* border: 1px solid red; */
+	&:hover {
+		color: #ff6347;
+	}
 }
 
 /* Make sure the navbar items are aligned properly */
@@ -150,6 +159,8 @@ body {
 	flex-grow: 1;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+	margin: 0 auto !important;
 }
 
 @media (max-width: 767px) {
@@ -180,13 +191,15 @@ body {
 
 .subscribe {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
 	gap: 1rem;
 	background-color: var(--primary1);
 	width: 90%;
-	height: 15vh;
+	padding: 3rem;
+	/* height: 15vh; */
 	margin: 0 auto;
 }
 
@@ -209,8 +222,21 @@ body {
 .show-recipes-btn {
 	letter-spacing: 0.3rem;
 	font-weight: 700;
-	max-width: 15rem;
+	max-width: 20rem;
 	margin: 0 auto;
+	/* color: #ff6347; */
+	color: var(--black);
+	background-color: transparent;
+
+	text-transform: uppercase;
+	background-color: var(--primary2);
+	padding: 1rem;
+	font-weight: 500;
+	&:hover {
+		background-color: var(--secondary2);
+		border: 2px solid var(--secondary2);
+		transition: all 0.3s ease-in-out;
+	}
 }
 
 .image-hover {
@@ -225,13 +251,16 @@ body {
 
 .cards-header {
 	/* border: 1px solid red; */
-	height: 16vh;
 	display: flex;
 	align-items: center;
-	width: 90.5%;
+	width: 90%;
 	margin: 0 auto;
+	padding: 1rem;
 	justify-content: center;
-	/* border: 1px solid red; */
+}
+
+.card-title {
+	color: var(--black);
 }
 
 h5 {
@@ -245,22 +274,29 @@ h5 {
 
 .card-box {
 	/* width: 18rem; border: none; border-radius: 0; */
-	width: 18rem;
+	/* width: 18rem; */
 	border: none;
 	border-radius: 0;
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .cards-wrapper {
 	/* border: 1px solid red; */
-	gap: 1rem;
-	width: 95%;
+	/* gap: 1rem; */
+	width: 90%;
 	margin: 0 auto;
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 	/* padding: 0;
         margin: 0; */
+	/* justify-content: space-between; */
+	gap: 1rem;
+	/* border: 1px solid red; */
 }
 
 .group-btn {
@@ -275,6 +311,7 @@ h5 {
 	height: 3rem;
 	font-size: 1.2rem;
 	font-weight: 700;
+	letter-spacing: 0.3rem;
 }
 
 .search {
@@ -287,7 +324,7 @@ h5 {
 	/* height: 60vh; */
 	width: 90%;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 3rem;
 }
 
 .intro {
@@ -302,6 +339,7 @@ h5 {
 	background-color: var(--primary2);
 	padding: 1rem;
 	font-weight: 500;
+	letter-spacing: 0.3rem;
 
 	&:hover {
 		background-color: var(--secondary2);
@@ -312,9 +350,21 @@ h5 {
 }
 
 .image-container {
+	border-radius: 50%; /* Makes the container itself round */
+	width: 200px; /* Set a fixed width (adjust as needed) */
+	height: 200px; /* Set the height to match the width for a perfect circle */
+	overflow: hidden; /* Ensures the image stays within the container */
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Centers the image within the container */
+	background-color: transparent;
 }
+
 .image-container > img {
-	border-radius: 50% !important;
+	width: 100%; /* Makes the image fill the container's width */
+	height: 100%; /* Ensures the image's height matches the container's height */
+	border-radius: 50%; /* Rounds the image itself to make it circular */
+	object-fit: unset; /* Ensures the image maintains its aspect ratio */
 }
 
 .pick-wrapper {
@@ -323,12 +373,16 @@ h5 {
 	background-color: var(--primary2);
 }
 
+.img-fluid {
+}
 .pick-description {
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
+	justify-content: space-between;
+	align-items: flex-start;
 	/* border: 1px solid red; */
+	padding: 3rem;
+	/* text-align: ; */
 }
 
 .pick-description > h1 {
@@ -344,6 +398,7 @@ h5 {
 	background-color: var(--primary2);
 	padding: 1rem;
 	font-weight: 500;
+	letter-spacing: 0.3rem;
 	&:hover {
 		background-color: var(--secondary2);
 		border: 2px solid var(--secondary2);
@@ -358,4 +413,76 @@ h5 {
 		color: black;
 		border: 2px solid var(--secondary2);
 	}
+}
+
+.ingredients-wrapper {
+	background-color: var(--primary2);
+	width: 90%;
+	margin: 0 auto;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.ingredients-wrapper > div > h2 {
+	text-transform: uppercase;
+}
+
+.ingredients-container {
+}
+
+.image-box {
+	border-radius: 50%; /* Makes the container itself round */
+	width: 150px; /* Set a fixed width (adjust as needed) */
+	height: 150px; /* Set the height to match the width for a perfect circle */
+	overflow: hidden; /* Ensures the image stays within the container */
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Centers the image within the container */
+	position: relative; /* Makes the container the reference point for absolute positioning */
+	z-index: 1;
+	background-color: white;
+	/* border: 1px solid var(--black); */
+	&:hover {
+		transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
+	}
+}
+.image-box > img {
+	/* vertical-align: middle; */
+	height: 60%;
+	width: 60%;
+}
+
+.ingredient-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.2);
+	/* background: transparent; */
+	/* background-color: rgba(108, 117, 125, 0.1); */
+	color: var(--white); /* White text color */
+	font-size: 20px; /* Text size */
+	z-index: 99; /* Ensures overlay is on top of the image */
+	&:hover {
+		/* background-color: rgba(108, 117, 125, 0.3); */
+		/* background-color: var(--white); */
+		background-color: rgba(0, 0, 0, 0.4);
+
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+.ingredient-overlay h6 {
+	margin: 0; /* Removes default margin */
+	text-align: center; /* Centers the text */
+	text-transform: uppercase;
 }

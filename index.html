@@ -1,62 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spicy Chinese Foods</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-</head>
-
-<body>
-    <h1>Hello world</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <nav class="` navbar-expand-lg fixed-top bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" id="logo" href="#">Chino Spice</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Discover Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Browse Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Meal Plans</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            More Options
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Healthy Recipes</a></li>
-                            <li><a class="dropdown-item" href="#">Quick & Easy</a></li>
-                            <li><a class="dropdown-item" href="#">Desserts</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="contact d-flex">
-                    <button id="contact-btn" class="form-control me-2">Contact</button>
-                </div>
-            </div>
-        </div>
-    </nav>
-</body>
-
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,12 +16,12 @@
 </head>
 
 <body>
-    <header class="header shadow mb-5 bg-body-tertiary">
+    <header class="header shadow mb-5">
         <div class="top-bar">
             <form method="get" role="search">
                 <label class="search-bar">
+                    <input type="search" placeholder="Search" class="">
                     <i class="bi bi-search"></i>
-                    <input type="search" placeholder="Search Chino Spice" class="">
                 </label>
 
                 <div class="social-icons ms-4">
@@ -97,13 +38,13 @@
             <nav class="navbar">
                 <ul class="navbar-nav me-4 mb-2 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">All Recipes</a>
+                        <a class="nav-link" href="#">ALL RECIPES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Vegan</a>
+                        <a class="nav-link" href="#">POPULAR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gluten-Free</a>
+                        <a class="nav-link" href="#">INGREDIENTS</a>
                     </li>
 
                 </ul>
@@ -121,13 +62,13 @@
                 <ul class="navbar-nav me-4 mb-2">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">LATEST</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">CONTACT</a>
                     </li>
 
                 </ul>
@@ -135,83 +76,220 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="container-fluid">
 
-        <section class="container-fluid text-center">
+        <section class="text-center my-5">
             <div class="row cards-header">
-                <div class="col">
-                    <h6 style="width: 64%;">Hot Spicy chinese Foods And Recipes That Will Make Your Day
-                </div>
+                <!-- <div class="col"> -->
+                <!-- <h6 style="width: 64%; text-align: justify;">Hot Spicy chinese Foods And Recipes That Will Make Your
+                        Day -->
+                <!-- </div> -->
 
                 <h2 class="col">RECIPES</h2>
-                <div class="col text-end">
+                <!-- <div class="col text-end">
 
                     <button type="button" class="btn show-recipes-btn">ALL RECIPES
                         &rarr;</button>
-                </div>
+                </div> -->
                 <!-- <h2>Recipes Based on Dietary Preferences</h2> -->
             </div>
             <div class="row cards-wrapper">
-                <div class="card card-box">
-                    <img src="./assets/images/tofu/tofu.jpg" class="card-img-top image-hover" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Mapo Tofu</h5>
-                    </div>
-                </div>
-                <div class="card card-box">
-                    <img src="./assets/images/fried-rice.jpg" class="card-img-top image-hover" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Chicken Fried Rice</h5>
-                    </div>
-                </div>
-                <div class="card card-box">
-                    <img src="./assets/images/pepper-steak.jpg" class="card-img-top image-hover" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Pepper Steak</h5>
-                    </div>
-                </div>
-                <div class="card card-box">
-                    <img src="./assets/images/chinese-eggplant.jpg" class="card-img-top image-hover" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Chinese Eggplant</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="group-btn" role="group" aria-label="Basic mixed styles">
-                <button type="button" class="btn btn-danger">BEEF</button>
-                <button type="button" class="btn btn-primary">CHICKEN AND POULTRY</button>
-                <button type="button" class="btn btn-secondary">TOFU</button>
-                <button type="button" class="btn btn-success">VEGETABLES</button>
-            </div>
-            <div class="row mt-3 mb-5">
+                <div class="col card card-box">
+                    <a href="">
 
-                <button type="button" class="col btn show-recipes-btn">ALL RECIPES
-                    &rarr;</button>
+                        <img src="./assets/images/tofu/tofu.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Mapo Tofu</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/fried-rice.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chicken Fried Rice</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/pepper-steak.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Pepper Steak</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/brands/chinese-eggplant.jpeg" class="card-img-top image-hover"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chinese Eggplant</h5>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="row mt-1 mb-5">
+
+                <button type="button" class="col show-recipes-btn">SHOW ALL RECIPES
+                    <span>&rarr;</span> </button>
             </div>
         </section>
 
-        <section class="container-fluid ">
+        <!-- browse via ingredients section -->
+
+
+        <section class="my-5">
+            <div class="ingredients-wrapper">
+
+
+                <div class="row">
+                    <h2>Browse Recipes By ingredients</h2>
+                </div>
+                <div class="row ingredients-container">
+                    <div class="col">
+                        <a href="#" style="width: max-content;">
+                            <div class="image-box position-relative">
+                                <img src="./assets/images/ingredients/vegetable.png" alt="">
+                                <div class="ingredient-overlay">
+                                    <h6>Vegetables</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#">
+
+                            <div class="image-box position-relative">
+                                <img src="./assets/images/ingredients/wheat-sack.png" alt="">
+                                <div class="ingredient-overlay">
+                                    <h6>RICE & FLOUR</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#">
+
+                            <div class="image-box position-relative">
+                                <img src="./assets/images/ingredients/chicken-leg.png" alt="">
+                                <div class="ingredient-overlay">
+                                    <h6>CHICKEN</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+
+                            <div class="image-box position-relative">
+                                <img src="./assets/images/ingredients/meat.png" alt="">
+                                <div class="ingredient-overlay">
+                                    <h6>BEEF</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#">
+
+                            <div class="image-box position-relative">
+                                <img src="./assets/images/ingredients/seafood.png" alt="">
+                                <div class="ingredient-overlay">
+                                    <h6>SEAFOOD</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about me section -->
+        <section class="my-5">
             <div class="row intro-container ">
-                <div class="col-4 image-container">
-                    <img src="./assets/images/profile.jpeg" alt="" class="img-fluid">
+                <div class="col-4 ">
+                    <div class=" image-container">
+                        <img src="./assets/images/profile.jpeg" alt="" class="img-thumbnail">
+                    </div>
                 </div>
                 <div class="col-8 intro">
                     <h2>WELCOME</h2>
-                    <p class="">Hi! I am Jack, The versatile creator behind this blog, offering a free
-                        digital
-                        cookbook with
-                        authentic and
-                        accessible Chinese recipes. I'm thrilled to have you here!</p>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consectetur velit
+                        perspiciatis eligendi reiciendis, rerum repellendus sequi mollitia harum soluta necessitatibus,
+                        laborum nemo eos, esse dolor doloremque maiores iure exercitationem.</p>
                     <div>
                         <button>READ MORE</button>
                     </div>
                 </div>
             </div>
-            <!-- <div class="row"></div> -->
         </section>
-        <section class="container-fluid text-center  mt-5">
+
+        <!-- most popular -->
+
+        <section class="text-center my-5">
+            <div class="row cards-header">
+
+                <h2 class="col">MOST POPULAR RECIPES</h2>
+            </div>
+            <div class="row cards-wrapper">
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/tofu/tofu.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Mapo Tofu</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/fried-rice.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chicken Fried Rice</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/pepper-steak.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Pepper Steak</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/brands/chinese-eggplant.jpeg" class="card-img-top image-hover"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chinese Eggplant</h5>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- pick of the week -->
+
+        <section class="my-5">
             <div class="row pick-wrapper shadow">
-                <div class="col m-auto pick-description">
+                <div class="col ps-0 position-relative">
+                    <img src="./assets/images/ghizou.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col pick-description">
                     <h4>PICK OF THE WEEK</h4>
                     <h1>GHIZOU</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consectetur velit perspiciatis
@@ -219,23 +297,81 @@
                         eos, esse dolor doloremque maiores iure exercitationem.</p>
                     <button class="custom-button">Explore Recipe</button>
                 </div>
-                <div class="col">
-                    <img src="./assets/images/ghizou.jpg" alt="" class="img-fluid">
+
+            </div>
+        </section>
+
+
+        <!-- latest added -->
+
+
+        <section class="text-center my-5">
+            <div class="row cards-header">
+
+                <h2 class="col">LATEST RECIPES</h2>
+            </div>
+            <div class="row cards-wrapper">
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/tofu/tofu.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Mapo Tofu</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/fried-rice.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chicken Fried Rice</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/pepper-steak.jpg" class="card-img-top image-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Pepper Steak</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col card card-box">
+                    <a href="">
+
+                        <img src="./assets/images/brands/chinese-eggplant.jpeg" class="card-img-top image-hover"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title ">Chinese Eggplant</h5>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </section>
-        <section class="container-fluid mt-5">
+
+
+        <section class="my-5">
             <div class="subscribe bg-secondary text-white">
+                <h1>SUBSCRIBE</h1>
                 <h4 class="">Join Our Newsletter And Receive Our Free Top 25 Recipes Book!</h4>
-                <!-- <div>
-                    <input type="text">
-                    <button class="custom-button">SUBSCRIBE</button>
-                </div> -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username"
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                <!-- <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email Adress" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary custom-button" type="button"
                         id="button-addon2">Button</button>
+                </div> -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consectetur velit perspiciatis
+                    eligendi reiciendis, rerum repellendus sequi mollitia harum soluta necessitatibus, laborum nemo
+                    eos, esse dolor doloremque maiores iure exercitationem.</p>
+                <div class="input-group">
+                    <!-- <span class="input-group-text">First and last name</span> -->
+                    <input type="text" aria-label="First name" placeholder="First name" class="form-control">
+                    <input type="text" aria-label="Email Address" placeholder="Email Address" class="form-control">
+                    <button class="btn btn-light custom-button" type="button" id="button-addon2">Subscribe</button>
                 </div>
             </div>
         </section>
