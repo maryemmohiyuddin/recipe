@@ -194,13 +194,15 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
 	gap: 1rem;
 	background-color: var(--primary1);
 	width: 90%;
 	padding: 3rem;
-	/* height: 15vh; */
 	margin: 0 auto;
+}
+
+.section-wrapper {
+	padding: 4rem 0;
 }
 
 .subscribe > button {
