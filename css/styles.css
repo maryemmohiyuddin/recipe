@@ -19,6 +19,7 @@
 
 body {
 	position: relative;
+	font-family: 'Crimson Text', serif;
 }
 
 .header {
@@ -189,23 +190,11 @@ body {
 	background-color: var(--bg);
 }
 
-.subscribe {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	background-color: var(--primary1);
-	width: 90%;
-	padding: 3rem;
-	margin: 0 auto;
-}
-
 .section-wrapper {
-	padding: 4rem 0;
+	padding: 3rem 0;
 }
 
-.subscribe > button {
+/* .subscribe > button {
 	border-radius: 2px;
 	height: 1.8rem;
 	width: 6rem;
@@ -219,13 +208,13 @@ body {
 		transform: scale(1.05);
 		transition: all 0.3s ease-in-out;
 	}
-}
+} */
 
 .show-recipes-btn {
-	letter-spacing: 0.3rem;
-	font-weight: 700;
-	max-width: 20rem;
-	margin: 0 auto;
+	/* letter-spacing: 0.3rem; */
+	/* max-width: 20rem; */
+	/* margin: 0 auto; */
+	align-self: center;
 	/* color: #ff6347; */
 	color: var(--black);
 	background-color: transparent;
@@ -233,7 +222,7 @@ body {
 	text-transform: uppercase;
 	background-color: var(--primary2);
 	padding: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	&:hover {
 		background-color: var(--secondary2);
 		border: 2px solid var(--secondary2);
@@ -280,6 +269,7 @@ h5 {
 	border: none;
 	border-radius: 0;
 	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -297,7 +287,7 @@ a {
 	/* padding: 0;
         margin: 0; */
 	/* justify-content: space-between; */
-	gap: 1rem;
+	/* gap: 1rem; */
 	/* border: 1px solid red; */
 }
 
@@ -312,7 +302,7 @@ a {
 	width: 17rem !important;
 	height: 3rem;
 	font-size: 1.2rem;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.3rem;
 }
 
@@ -340,7 +330,7 @@ a {
 	/* border: none; */
 	background-color: var(--primary2);
 	padding: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.3rem;
 
 	&:hover {
@@ -375,8 +365,6 @@ a {
 	background-color: var(--primary2);
 }
 
-.img-fluid {
-}
 .pick-description {
 	display: flex;
 	flex-direction: column;
@@ -399,8 +387,8 @@ a {
 	text-transform: uppercase;
 	background-color: var(--primary2);
 	padding: 1rem;
-	font-weight: 500;
-	letter-spacing: 0.3rem;
+	font-weight: 600;
+	/* letter-spacing: 0.3rem; */
 	&:hover {
 		background-color: var(--secondary2);
 		border: 2px solid var(--secondary2);
@@ -408,14 +396,14 @@ a {
 	}
 }
 
-.subscribe > .custom-button {
-	color: white;
-	border-color: white;
+/* .subscribe > .custom-button {
+	background-color: var(--primary2);
+
 	&:hover {
-		color: black;
+		color: black !important;
 		border: 2px solid var(--secondary2);
 	}
-}
+} */
 
 .ingredients-wrapper {
 	background-color: var(--primary2);
@@ -487,4 +475,104 @@ a {
 	margin: 0; /* Removes default margin */
 	text-align: center; /* Centers the text */
 	text-transform: uppercase;
+}
+
+.bg-image__wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Centers the content inside the wrapper */
+	flex: 1;
+	height: 100%;
+	width: 100%;
+	/* border: 2px solid red; */
+	background-image: url('../assets/images/chinese-eggplant.jpg'); /* Set background image */
+	background-size: cover; /* Ensures the image covers the entire area */
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+	z-index: 1;
+}
+
+.subscribe {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	/* background-color: var(--primary1); */
+	background-color: rgba(0, 0, 0, 0.5);
+	/* width: 90%; */
+	padding: 3rem;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+/* footer section */
+/* Custom Footer CSS */
+.footer {
+	background-color: #333; /* Dark background like Epicurious */
+	color: white;
+	padding: 3rem 3rem;
+}
+
+.footer a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	/* color: #ff6347; */
+}
+
+.footer .social-icons a {
+	margin: 0 15px;
+	font-size: 24px;
+	color: #ccc;
+}
+
+.footer .social-icons a:hover {
+	color: #ff6347;
+}
+
+.footer .social-icons {
+	margin-bottom: 20px;
+}
+
+.footer h5 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* .footer .subscribe-form input[type='email'] {
+	border-radius: 20px;
+	padding: 10px;
+	border: none;
+	margin-right: 10px;
+} */
+
+.footer .footer-bottom {
+	background-color: #222;
+	color: #bbb;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.list-box {
+	/* border: 1px solid red; 	 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.list-box > li:hover {
+	/* border-bottom: 2px solid #bbb;  */
+	/* transition: border-bottom 0.3s ease; */
+	text-decoration: underline;
 }
