@@ -320,7 +320,7 @@ h5 {
 .card-box {
 	/* width: 18rem; border: none; border-radius: 0; */
 	/* width: 18rem; */
-	border: none;
+	border-color: var(--secondary2);
 	border-radius: 0;
 	padding: 0;
 	margin: 0;
