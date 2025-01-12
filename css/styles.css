@@ -588,13 +588,15 @@ a {
 /* footer section */
 /* Custom Footer CSS */
 .footer {
-	background-color: #333; /* Dark background like Epicurious */
-	color: white;
+	background-color: var(--secondary2);
+	color: rgb(65, 65, 65);
 	padding: 3rem 3rem;
 }
 
+
+
 .footer a {
-	color: #ccc;
+	color: rgb(65, 65, 65);
 	text-decoration: none;
 }
 
@@ -605,7 +607,7 @@ a {
 .footer .social-icons a {
 	margin: 0 15px;
 	font-size: 24px;
-	color: #ccc;
+	color: rgb(65, 65, 65);
 }
 
 .footer .social-icons a:hover {
