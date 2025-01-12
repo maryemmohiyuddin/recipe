@@ -21,6 +21,7 @@
             <form method="get" role="search">
                 <label class="search-bar">
                     <input type="search" placeholder="Search" class="">
+                    <!-- <input type="text" class="form-control" placeholder="Search" aria-label="Search"> -->
                     <i class="bi bi-search"></i>
                 </label>
 
@@ -36,9 +37,9 @@
         </div>
         <div class="navbar-wrapper">
             <nav class="navbar">
-                <ul class="navbar-nav me-4 mb-2 ">
+                <ul class="navbar-nav navbar-nv me-4 mb-2 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ALL RECIPES</a>
+                        <a class="nav-link" href="#">RECIPES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">POPULAR</a>
@@ -52,11 +53,11 @@
                             aria-expanded="false">
                             INGREDIENTS
                         </div>
-                        <ul class="dropdown-menu dropdown">
+                        <ul class="dropdown-menu dropdown" style="position: absolute !important; top: 10;">
                             <li><a class="dropdown-item" href="#">VEGETABLES</a></li>
-                            <li><a class="dropdown-item" href="#">BEEF</a></li>
-                            <li><a class="dropdown-item" href="#"> BEEF</a></li>
+                            <li><a class="dropdown-item" href="#">RICE & FLOUR</a></li>
                             <li><a class="dropdown-item" href="#"> POULTRY & CHICKEN</a></li>
+                            <li><a class="dropdown-item" href="#">BEEF</a></li>
                             <li><a class="dropdown-item" href="#"> SEAFOOD</a></li>
                             <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
                             <!-- <li>
@@ -77,13 +78,13 @@
             </div>
 
             <nav class="navbar">
-                <ul class="navbar-nav me-4 mb-2">
+                <ul class="navbar-nav navbar-nv me-4 mb-2">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SICHUAN</a>
+                        <a class="nav-link " href="#">SICHUAN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link " href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT</a>
@@ -91,6 +92,67 @@
 
                 </ul>
 
+            </nav>
+            <nav class="navbar fixed-top" id="mobile-view">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header" style="background-color: var(--secondary2);">
+                            <a href="#">
+                                <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">CHINO SPACE</h5>
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" style="background-color: var(--primary2);">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Recipes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Popular</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu dropdown">
+                                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="#">Rice and Flour</a></li>
+                                        <li><a class="dropdown-item" href="#">Chicken & Poultry</a></li>
+                                        <li><a class="dropdown-item" href="#">Beef</a></li>
+                                        <li><a class="dropdown-item" href="#">Seafood</a></li>
+                                        <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sichuan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success custom-button" type="submit"
+                                    style="color: var(--black); border: 2px solid var(--black);">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -251,6 +313,7 @@
 
                 <h2 class="col">SPICY SICHUAN RECIPES</h2>
             </div> -->
+
             <div class="row cards-wrapper">
                 <article class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card card-box">
