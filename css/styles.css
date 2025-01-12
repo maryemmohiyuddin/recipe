@@ -51,6 +51,20 @@ body {
 	/* Center and rotate the logo */
 }
 
+.dropdown-toggle {
+	position: relative;
+}
+
+.dropdown {
+	position: absolute !important;
+	top: 0;
+}
+
+.dropdown > li > a:hover {
+	background-color: var(--secondary2);
+	transition: all 0.25s ease-in;
+}
+
 .navbar {
 	/* background-color: #ffffff; */
 	padding: 1rem;
@@ -150,6 +164,16 @@ body {
 	/* border: 1px solid red; */
 	&:hover {
 		color: #ff6347;
+	}
+}
+
+#drop-down__title {
+	font-size: 1.2rem;
+	color: #333;
+	font-weight: 600;
+	&:hover {
+		color: #ff6347;
+		cursor: pointer;
 	}
 }
 
@@ -422,6 +446,7 @@ a {
 }
 
 .ingredients-container {
+	row-gap: 0.5rem;
 }
 
 .image-box {
@@ -475,6 +500,12 @@ a {
 	margin: 0; /* Removes default margin */
 	text-align: center; /* Centers the text */
 	text-transform: uppercase;
+}
+
+.circle-container {
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
 }
 
 .bg-image__wrapper {
@@ -568,7 +599,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .list-box > li:hover {
